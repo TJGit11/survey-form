@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <h1 id="title">Survey</h1>
@@ -12,7 +13,7 @@
 
 <form id="survey-form">
   <label id="name-label" for="name">Name</label>
-    <input id="name" type="text" name="name" placeholder="Enter your name"></input>
+    <input id="name" type="text" name="name" placeholder="Enter your name" required></input>
   
   <label id="email-label" for="email">Email</label>
     <input id="email" type="email" name="email" placeholder="Enter your email address" required></input>
@@ -20,8 +21,8 @@
   <label id="number-label" for="age">Age</label>
     <input id="number" type="number" name="age" min="8" max="100" placeholder="Age"></input>
 
-  <label id="dropdown-label">Dropdown label</label>
-    <select id="dropdown">
+  <p id="downquestion">What would be the best dropdown?</p>
+    <select id="dropdown" name="dropdown">
       <option disabled selected value>Choose one</option>
       <option> Option 1</option>
       <option> Option 2</option>
@@ -29,6 +30,10 @@
       <option> Option 4</option>
       <option> Option 5</option>
     </select>
+  <p>Are these good radio buttons?</p>
+  <input type="radio" value="yes">Yes!</input>
+  <input type="radio" value="no">No!</input>
+  <input type="radio" value="somewhat">Somewhat</input>
 
 
 
