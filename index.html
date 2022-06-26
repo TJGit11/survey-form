@@ -12,15 +12,22 @@
   <p id="description">Thank you for making time for this survey</p>
 
 <form id="survey-form">
+  <div class="form-group">
   <label id="name-label" for="name">Name</label>
     <input id="name" type="text" name="name" placeholder="Enter your name" required></input>
+    </div>
   
+  <div class="form-group">
   <label id="email-label" for="email">Email</label>
     <input id="email" type="email" name="email" placeholder="Enter your email address" required></input>
+    </div>
   
+  <div class="form-group">
   <label id="number-label" for="age">Age</label>
     <input id="number" type="number" name="age" min="8" max="100" placeholder="Age"></input>
+    </div>
 
+  <div class="form-group">
   <p id="downquestion">What would be the best dropdown?</p>
     <select id="dropdown" name="dropdown">
       <option disabled selected value>Choose one</option>
@@ -30,7 +37,9 @@
       <option> Option 4</option>
       <option> Option 5</option>
     </select>
+    </div>
 
+  <div class="form-group">
   <p>Are these good radio buttons?</p>
   <label>
     <input type="radio" value="yes" name="goodbuttons">Yes!</input>
@@ -43,16 +52,23 @@
   <label>
     <input type="radio" value="somewhat" name="goodbuttons" checked>Somewhat</input>
   </label>
+  </div>
 
-<p>What are you here to do? Check applicable options.</p>
+<div class="form-group">
+<p>What are you here to do? Check all that apply.</p>
   <input type="checkbox" name="checkquestion" value="be">Be a great thing</input>
   <input type="checkbox" name="checkquestion" value="do">Do great things</input>
   <input type="checkbox" name="checkquestion" value="see">See great things</input>
   <input type="checkbox" name="checkquestion" value="achieve">Achieve new heights</input>
+  </div>
 
+  <div class="form-group">
   <textarea id="comments" placeholder="Questions, comments, concerns?"></textarea>
+  </div>
 
+  <div class="form-group">
   <button id="submit" type="submit">Submit survey</button>
+  </div>
   
 
 
